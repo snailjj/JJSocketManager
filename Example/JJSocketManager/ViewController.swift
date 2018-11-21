@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import JJSocketManager
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print(GCDSocketManager.shared)
     }
 
     override func didReceiveMemoryWarning() {

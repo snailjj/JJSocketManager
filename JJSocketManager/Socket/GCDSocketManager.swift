@@ -15,6 +15,8 @@ enum SocketOffLine: Int {
 
 public class GCDSocketManager: NSObject {
     
+    public static let shared = GCDSocketManager()           //单例
+    
     private var loginInfo: [String : String]?               //登录信息
     private var socketClient: GCDAsyncSocket!               //连接对象
     private var timeout: TimeInterval = 30                  //超时
@@ -77,7 +79,7 @@ extension GCDSocketManager: GCDAsyncSocketDelegate {
     }
     
     public func socket(_ sock: GCDAsyncSocket, didRead data: Data, withTag tag: Int) {
-        let str = String.init(data: data, encoding: .utf8)
+//        let str = String.init(data: data, encoding: .utf8)
         sock.readData(withTimeout: readMessageTimeout, tag: 0)
     }
     
