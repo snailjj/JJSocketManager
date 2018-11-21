@@ -1,0 +1,6 @@
+framework module Pods_JJSocketManager_Tests {
+  umbrella header "Pods-JJSocketManager_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

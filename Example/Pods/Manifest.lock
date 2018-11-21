@@ -1,0 +1,33 @@
+PODS:
+  - CocoaAsyncSocket (7.6.3)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - JJSocketManager (0.1.0):
+    - JJSocketManager/Socket (= 0.1.0)
+  - JJSocketManager/Socket (0.1.0):
+    - CocoaAsyncSocket
+
+DEPENDENCIES:
+  - FBSnapshotTestCase (~> 2.1.4)
+  - JJSocketManager (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CocoaAsyncSocket
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  JJSocketManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  JJSocketManager: 87f9959a258c38a9246caf219cb7aafc6007e83e
+
+PODFILE CHECKSUM: 5f86791b67d668302f1434ab2ba2375682e1b3eb
+
+COCOAPODS: 1.5.3
