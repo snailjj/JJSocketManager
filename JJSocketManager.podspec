@@ -19,12 +19,18 @@ TODO: Add long description of the pod here.
   s.author           = { 'snailjj' => 'snail5jj@hotmail.com' }
   s.source           = { :git => 'https://github.com/snailjj/JJSocketManager.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
+  s.static_framework  =  true
 
   
-  s.subspec 'Socket' do |st|
+    s.subspec 'Socket' do |st|
       st.source_files = 'JJSocketManager/Socket/*.swift'
       st.dependency 'CocoaAsyncSocket'
-  end
+    end
+
+    s.subspec 'WebSocket' do |wst|
+      wst.source_files = 'JJSocketManager/WebSocket/*.swift'
+      wst.dependency 'Socket.IO-Client-Swift'
+    end
 
 
   

@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48B5D97B3FD4680ED4C17ACB /* libPods-JJSocketManager_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8E5EAFFC1906119E1EC8E9 /* libPods-JJSocketManager_Tests.a */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		8216B48BE8FB61699CE543A1 /* Pods_JJSocketManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041482D8E04FF15D0E7870A2 /* Pods_JJSocketManager_Example.framework */; };
-		CC457B68ED024A18D9863814 /* Pods_JJSocketManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A365F03653DF8FD46D4ADD3 /* Pods_JJSocketManager_Tests.framework */; };
+		8257851910DB796B663E8857 /* libPods-JJSocketManager_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC5452D6ACF94924E229DB0 /* libPods-JJSocketManager_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		041482D8E04FF15D0E7870A2 /* Pods_JJSocketManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJSocketManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FEF1AC9F50619DEB116C61B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2DC5452D6ACF94924E229DB0 /* libPods-JJSocketManager_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JJSocketManager_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* JJSocketManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJSocketManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,9 +40,9 @@
 		607FACE51AFB9204008FA782 /* JJSocketManager_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JJSocketManager_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7A365F03653DF8FD46D4ADD3 /* Pods_JJSocketManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJSocketManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90164B7C98E6E9D99A816A5C /* Pods-JJSocketManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJSocketManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJSocketManager_Example/Pods-JJSocketManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AEE53C3AF5D2FAE75AF7E541 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AF8E5EAFFC1906119E1EC8E9 /* libPods-JJSocketManager_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JJSocketManager_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE159B85EC4BD16E2060F32 /* Pods-JJSocketManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJSocketManager_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJSocketManager_Tests/Pods-JJSocketManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C71F990475FDE52689AD9C70 /* Pods-JJSocketManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJSocketManager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJSocketManager_Example/Pods-JJSocketManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DE364C0189D27BEF3ADDAD5C /* JJSocketManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JJSocketManager.podspec; path = ../JJSocketManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8216B48BE8FB61699CE543A1 /* Pods_JJSocketManager_Example.framework in Frameworks */,
+				8257851910DB796B663E8857 /* libPods-JJSocketManager_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC457B68ED024A18D9863814 /* Pods_JJSocketManager_Tests.framework in Frameworks */,
+				48B5D97B3FD4680ED4C17ACB /* libPods-JJSocketManager_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,8 +153,8 @@
 		FEC4D3CE2BDAFCCB1AC139B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				041482D8E04FF15D0E7870A2 /* Pods_JJSocketManager_Example.framework */,
-				7A365F03653DF8FD46D4ADD3 /* Pods_JJSocketManager_Tests.framework */,
+				2DC5452D6ACF94924E229DB0 /* libPods-JJSocketManager_Example.a */,
+				AF8E5EAFFC1906119E1EC8E9 /* libPods-JJSocketManager_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -170,7 +170,6 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				3C6EF9EC175EAD63BD1E3B4C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,7 +188,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				8317F1AD200E5C10E02E1026 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,52 +260,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3C6EF9EC175EAD63BD1E3B4C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-JJSocketManager_Example/Pods-JJSocketManager_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
-				"${BUILT_PRODUCTS_DIR}/JJSocketManager/JJSocketManager.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JJSocketManager.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JJSocketManager_Example/Pods-JJSocketManager_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8317F1AD200E5C10E02E1026 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-JJSocketManager_Tests/Pods-JJSocketManager_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JJSocketManager_Tests/Pods-JJSocketManager_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		99C8FCBA8EF1584E576437EE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

@@ -1,0 +1,6 @@
+module JJSocketManager {
+  umbrella header "JJSocketManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -39,7 +39,7 @@ extension GCDSocketManager {
     /**
      连接服务器
      */
-    func connectWith(loginDict: [String: String], host: String, port: String) {
+    public func connectWith(loginDict: [String: String], host: String, port: String) {
         if socketClient != nil {
             socketClient = nil
         }
@@ -55,7 +55,7 @@ extension GCDSocketManager {
 
 extension GCDSocketManager: GCDAsyncSocketDelegate {
     
-    public func socket(_ sock: GCDAsyncSocket, didConnectToHost host: String, port: UInt16) {
+    private func socket(_ sock: GCDAsyncSocket, didConnectToHost host: String, port: UInt16) {
         sock.userData = SocketOffLine.byServer.rawValue
         if heartTimer != nil {
             heartTimer?.invalidate()
@@ -65,7 +65,7 @@ extension GCDSocketManager: GCDAsyncSocketDelegate {
         RunLoop.current.run()
     }
     
-    public func socketDidDisconnect(_ sock: GCDAsyncSocket, withError err: Error?) {
+    private func socketDidDisconnect(_ sock: GCDAsyncSocket, withError err: Error?) {
         if let ss = sock.userData as? Int {
             if ss == SocketOffLine.byUser.rawValue {
                 return
@@ -74,11 +74,11 @@ extension GCDSocketManager: GCDAsyncSocketDelegate {
         connectWith(loginDict: loginInfo!, host: "", port: "")
     }
 
-    public func socket(_ sock: GCDAsyncSocket, didWriteDataWithTag tag: Int) {
+    private func socket(_ sock: GCDAsyncSocket, didWriteDataWithTag tag: Int) {
         print("发送消息成功")
     }
     
-    public func socket(_ sock: GCDAsyncSocket, didRead data: Data, withTag tag: Int) {
+    private func socket(_ sock: GCDAsyncSocket, didRead data: Data, withTag tag: Int) {
 //        let str = String.init(data: data, encoding: .utf8)
         sock.readData(withTimeout: readMessageTimeout, tag: 0)
     }

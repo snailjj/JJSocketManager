@@ -5,10 +5,16 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - JJSocketManager (0.1.0):
-    - JJSocketManager/Socket (= 0.1.0)
-  - JJSocketManager/Socket (0.1.0):
+  - JJSocketManager (0.1.1):
+    - JJSocketManager/Socket (= 0.1.1)
+    - JJSocketManager/WebSocket (= 0.1.1)
+  - JJSocketManager/Socket (0.1.1):
     - CocoaAsyncSocket
+  - JJSocketManager/WebSocket (0.1.1):
+    - Socket.IO-Client-Swift
+  - Socket.IO-Client-Swift (13.3.1):
+    - Starscream (~> 3.0.2)
+  - Starscream (3.0.6)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
@@ -18,6 +24,8 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CocoaAsyncSocket
     - FBSnapshotTestCase
+    - Socket.IO-Client-Swift
+    - Starscream
 
 EXTERNAL SOURCES:
   JJSocketManager:
@@ -26,8 +34,10 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  JJSocketManager: 87f9959a258c38a9246caf219cb7aafc6007e83e
+  JJSocketManager: 1fff852bd2ad056913d689b7c5f3b03c5153b73c
+  Socket.IO-Client-Swift: 79f8f85fa44881838175a20f9bd2c32bef2c9d37
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
 
-PODFILE CHECKSUM: 5f86791b67d668302f1434ab2ba2375682e1b3eb
+PODFILE CHECKSUM: 461da38b54223fe7bc65492676a6793a27f6da0e
 
 COCOAPODS: 1.5.3

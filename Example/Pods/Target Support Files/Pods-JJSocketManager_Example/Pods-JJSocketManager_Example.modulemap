@@ -1,4 +1,4 @@
-framework module Pods_JJSocketManager_Example {
+module Pods_JJSocketManager_Example {
   umbrella header "Pods-JJSocketManager_Example-umbrella.h"
 
   export *
