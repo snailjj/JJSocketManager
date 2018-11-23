@@ -1,10 +1,10 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CocoaAsyncSocket" "${PODS_ROOT}/Headers/Public/FBSnapshotTestCase"
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CocoaAsyncSocket" "${PODS_CONFIGURATION_BUILD_DIR}/JJSocketManager" "${PODS_CONFIGURATION_BUILD_DIR}/Socket.IO-Client-Swift" "${PODS_CONFIGURATION_BUILD_DIR}/Starscream"
-OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_ROOT}/Headers/Public/CocoaAsyncSocket/CocoaAsyncSocket.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/JJSocketManager/JJSocketManager.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Socket.IO-Client-Swift/SocketIO.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Starscream/Starscream.modulemap" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/CocoaAsyncSocket" -isystem "${PODS_ROOT}/Headers/Public/FBSnapshotTestCase"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"CocoaAsyncSocket" -l"JJSocketManager" -l"Socket.IO-Client-Swift" -l"Starscream" -framework "CFNetwork" -framework "Security"
-OTHER_SWIFT_FLAGS = $(inherited) -Xcc -fmodule-map-file="${PODS_ROOT}/Headers/Public/CocoaAsyncSocket/CocoaAsyncSocket.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/JJSocketManager/JJSocketManager.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Socket.IO-Client-Swift/SocketIO.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Starscream/Starscream.modulemap" $(inherited) "-D" "COCOAPODS"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FBSnapshotTestCase"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/JJSocketManager" "${PODS_CONFIGURATION_BUILD_DIR}/Socket.IO-Client-Swift" "${PODS_CONFIGURATION_BUILD_DIR}/Starscream"
+OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/JJSocketManager/JJSocketManager.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Socket.IO-Client-Swift/SocketIO.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Starscream/Starscream.modulemap" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/FBSnapshotTestCase"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"JJSocketManager" -l"Socket.IO-Client-Swift" -l"Starscream"
+OTHER_SWIFT_FLAGS = $(inherited) -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/JJSocketManager/JJSocketManager.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Socket.IO-Client-Swift/SocketIO.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Starscream/Starscream.modulemap" $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

@@ -8,12 +8,16 @@
 import UIKit
 import SocketIO
 
-class WebSocketManager: NSObject {
+public class WebSocketManager: NSObject {
     
     public static var shared : WebSocketManager = WebSocketManager()
     
     private var manager: SocketManager!
     private var socket: SocketIOClient!
+    
+    public override init() {
+        super.init()
+    }
     
     public func connect(withUrl: String) {
         let url = URL(string: withUrl)

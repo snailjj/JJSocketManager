@@ -1,7 +1,7 @@
 use_modular_headers!
 
 target 'JJSocketManager_Example' do
-    pod 'JJSocketManager', :path => '../', :modular_headers => true
+    pod 'JJSocketManager', :path => '../'
 
   target 'JJSocketManager_Tests' do
     inherit! :search_paths

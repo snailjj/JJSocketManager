@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
+  s.swift_version    = '4.2'
   s.homepage         = 'https://github.com/snailjj/JJSocketManager'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'snailjj' => 'snail5jj@hotmail.com' }
@@ -22,10 +23,11 @@ TODO: Add long description of the pod here.
   s.static_framework  =  true
 
   
-    s.subspec 'Socket' do |st|
-      st.source_files = 'JJSocketManager/Socket/*.swift'
-      st.dependency 'CocoaAsyncSocket'
-    end
+#    s.subspec 'Socket' do |st|
+#      st.source_files = 'JJSocketManager/Socket/*.swift'
+#      st.dependency 'CocoaAsyncSocket'
+#      st.public_header_files = 'Pods'
+#    end
 
     s.subspec 'WebSocket' do |wst|
       wst.source_files = 'JJSocketManager/WebSocket/*.swift'

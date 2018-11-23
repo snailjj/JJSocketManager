@@ -3,6 +3,7 @@
   "version": "0.1.1",
   "summary": "Swift Socket： include websocket、socket",
   "description": "TODO: Add long description of the pod here.",
+  "swift_version": "4.2",
   "homepage": "https://github.com/snailjj/JJSocketManager",
   "license": {
     "type": "MIT",
@@ -20,15 +21,6 @@
   },
   "static_framework": true,
   "subspecs": [
-    {
-      "name": "Socket",
-      "source_files": "JJSocketManager/Socket/*.swift",
-      "dependencies": {
-        "CocoaAsyncSocket": [
-
-        ]
-      }
-    },
     {
       "name": "WebSocket",
       "source_files": "JJSocketManager/WebSocket/*.swift",

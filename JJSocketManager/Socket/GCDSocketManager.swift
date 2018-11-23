@@ -29,7 +29,7 @@ public class GCDSocketManager: NSObject {
     
     public var isConnected: Bool = false                    //是否连接
     
-    override init() {
+    public override init() {
         super.init()
     }
     
