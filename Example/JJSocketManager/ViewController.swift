@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-//        WebSocketManager.shared.connect(withUrl: "www.baidu.com")
-        
+        WebSocketManager.shared.connect(withUrl: "www.baidu.com")
+        GCDSocketManager.shared.connectWith(loginDict: [:], host: "", port: "12")
     }
 
     override func didReceiveMemoryWarning() {

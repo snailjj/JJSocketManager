@@ -9,3 +9,7 @@ target 'JJSocketManager_Example' do
     pod 'FBSnapshotTestCase' , '~> 2.1.4'
   end
 end
+
+pre_install do |installer|
+    Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
+end
