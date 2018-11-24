@@ -1,6 +1,6 @@
 {
   "name": "JJSocketManager",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "summary": "Swift Socket： include websocket、socket",
   "description": "TODO: Add long description of the pod here.",
   "swift_version": "4.2",
@@ -14,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/snailjj/JJSocketManager.git",
-    "tag": "0.2.2"
+    "tag": "0.2.3"
   },
   "platforms": {
     "ios": "8.0"
@@ -22,9 +22,8 @@
   "static_framework": true,
   "subspecs": [
     {
-      "name": "Socket",
-      "source_files": "JJSocketManager/Socket/*.swift",
-      "prefix_header_contents": "#import<CocoaAsyncSocket/GCDAsyncSocket.h>",
+      "name": "CocoaSocket",
+      "source_files": "JJSocketManager/CocoaSocket/*.swift",
       "dependencies": {
         "CocoaAsyncSocket": [
 
@@ -32,10 +31,19 @@
       }
     },
     {
-      "name": "WebSocket",
-      "source_files": "JJSocketManager/WebSocket/*.swift",
+      "name": "WebSocketIO",
+      "source_files": "JJSocketManager/WebSocketIO/*.swift",
       "dependencies": {
         "Socket.IO-Client-Swift": [
+
+        ]
+      }
+    },
+    {
+      "name": "WebSocketRocket",
+      "source_files": "JJSocketManager/WebSocketRocket/*.swift",
+      "dependencies": {
+        "SocketRocket": [
 
         ]
       }

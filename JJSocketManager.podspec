@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JJSocketManager'
-  s.version          = '0.2.2'
+  s.version          = '0.2.3'
   s.summary          = 'Swift Socket： include websocket、socket'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
@@ -23,15 +23,20 @@ TODO: Add long description of the pod here.
   s.static_framework  =  true
 
   
-    s.subspec 'Socket' do |st|
-      st.source_files = 'JJSocketManager/Socket/*.swift'
-      st.prefix_header_contents = '#import<CocoaAsyncSocket/GCDAsyncSocket.h>'
-      st.dependency 'CocoaAsyncSocket'
+    s.subspec 'CocoaSocket' do |cst|
+      cst.source_files = 'JJSocketManager/CocoaSocket/*.swift'
+#      st.prefix_header_contents = '#import<CocoaAsyncSocket/GCDAsyncSocket.h>'
+      cst.dependency 'CocoaAsyncSocket'
     end
 
-    s.subspec 'WebSocket' do |wst|
-      wst.source_files = 'JJSocketManager/WebSocket/*.swift'
-      wst.dependency 'Socket.IO-Client-Swift'
+    s.subspec 'WebSocketIO' do |wstio|
+      wstio.source_files = 'JJSocketManager/WebSocketIO/*.swift'
+      wstio.dependency 'Socket.IO-Client-Swift'
+    end
+    
+    s.subspec 'WebSocketRocket' do |wstro|
+        wstro.source_files = 'JJSocketManager/WebSocketRocket/*.swift'
+        wstro.dependency 'SocketRocket'
     end
 
 

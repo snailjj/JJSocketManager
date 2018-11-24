@@ -1,9 +1,9 @@
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/JJSocketManager
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public"
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CocoaAsyncSocket" "${PODS_CONFIGURATION_BUILD_DIR}/Socket.IO-Client-Swift" "${PODS_CONFIGURATION_BUILD_DIR}/Starscream"
-OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_ROOT}/Headers/Public/CocoaAsyncSocket/CocoaAsyncSocket.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Socket.IO-Client-Swift/SocketIO.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Starscream/Starscream.modulemap"
-OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS" -Xcc -fmodule-map-file="${PODS_ROOT}/Headers/Public/CocoaAsyncSocket/CocoaAsyncSocket.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Socket.IO-Client-Swift/SocketIO.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Starscream/Starscream.modulemap" -import-underlying-module -Xcc -fmodule-map-file="${SRCROOT}/${MODULEMAP_FILE}"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CocoaAsyncSocket" "${PODS_CONFIGURATION_BUILD_DIR}/Socket.IO-Client-Swift" "${PODS_CONFIGURATION_BUILD_DIR}/SocketRocket" "${PODS_CONFIGURATION_BUILD_DIR}/Starscream"
+OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_ROOT}/Headers/Public/CocoaAsyncSocket/CocoaAsyncSocket.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Socket.IO-Client-Swift/SocketIO.modulemap" -fmodule-map-file="${PODS_ROOT}/Headers/Public/SocketRocket/SocketRocket.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Starscream/Starscream.modulemap"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS" -Xcc -fmodule-map-file="${PODS_ROOT}/Headers/Public/CocoaAsyncSocket/CocoaAsyncSocket.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Socket.IO-Client-Swift/SocketIO.modulemap" -Xcc -fmodule-map-file="${PODS_ROOT}/Headers/Public/SocketRocket/SocketRocket.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Starscream/Starscream.modulemap" -import-underlying-module -Xcc -fmodule-map-file="${SRCROOT}/${MODULEMAP_FILE}"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}
