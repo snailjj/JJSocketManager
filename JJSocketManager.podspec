@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JJSocketManager'
-  s.version          = '0.2.3'
+  s.version          = '0.2.5'
   s.summary          = 'Swift Socket： include websocket、socket'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
